@@ -1,0 +1,24 @@
+:root { color-scheme: light; --ink: #142e24; --green: #245b45; --paper: #f7f4ec; --line: #ded8c6; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.6 system-ui, sans-serif; }
+a { color: var(--green); text-underline-offset: .23em; }
+a:focus-visible { outline: 3px solid #936321; outline-offset: 4px; }
+header { background: #fffdf8; border-bottom: 1px solid var(--line); }
+.header-inner, main, footer { width: min(70rem, calc(100% - 2.5rem)); margin-inline: auto; }
+.header-inner { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; padding-block: 1rem; }
+.brand { color: var(--ink); font: bold 1.5rem Georgia, serif; text-decoration: none; }
+.brand span { color: var(--green); }
+.header-inner nav { display: flex; gap: 1rem; flex-wrap: wrap; }
+main { min-height: 65vh; padding-block: clamp(1.5rem, 5vw, 3.5rem); }
+h1, h2 { font-family: Georgia, serif; line-height: 1.15; }
+h1 { font-size: clamp(2rem, 6vw, 4rem); margin: 0 0 1.4rem; }
+.hero { border-radius: 1rem; color: white; padding: clamp(1.5rem, 6vw, 4rem); background: linear-gradient(90deg,#10281ff5,#10281f91), url('/images/home-pottery-workshop.jpg') center / cover; }
+.hero div { max-width: 34rem; }
+.hero a { display: inline-block; background: white; border-radius: .4rem; padding: .5rem .9rem; font-weight: 700; }
+.customer { margin-block-start: 2rem; }
+.sections { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: .75rem; margin-block: 1.5rem; }
+.sections a, .records li { background: #fffdf8; border: 1px solid var(--line); border-radius: .65rem; padding: .85rem 1rem; }
+.sections a { display: flex; justify-content: space-between; gap: .5rem; font-weight: 650; }
+.records { list-style: none; padding: 0; display: grid; gap: .65rem; }
+.records li { display: flex; gap: .25rem 1rem; justify-content: space-between; flex-wrap: wrap; }
+footer { border-top: 1px solid var(--line); color: #4f675f; padding-block: 1rem 2rem; }
